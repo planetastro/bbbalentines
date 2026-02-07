@@ -1,0 +1,5 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f5c7c7"/>
+  <text x="200" y="120" font-family="Arial" font-size="30" fill="#a05252" text-anchor="middle" dominant-baseline="middle">Our Picture Here!</text>
+  <text x="200" y="160" font-family="Arial" font-size="20" fill="#a05252" text-anchor="middle" dominant-baseline="middle">(Replace with a real photo)</text>
+</svg>
