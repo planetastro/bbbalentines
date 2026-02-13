@@ -129,8 +129,12 @@
 		margin-top: 20px;
 		font-size: 1.2em;
 		font-weight: bold;
-		color: #333;
+		text-align: center;
+		color: #ff69b4; /* Hot pink */
+		background-color: #fff;
 		animation: fadeIn 0.8s ease-out forwards; /* Fade in animation */
+		border-radius: 10px;
+		padding: 10px;
 	}
 
 	/* Keyframe animation for fade in */

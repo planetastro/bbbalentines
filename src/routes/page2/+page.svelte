@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ImageSelection from '$lib/components/ImageSelection.svelte';
 
-	const question = 'Which one captures our most memorable adventure?';
+	const question = 'Which picture do I think is the silliest Betty?';
 	const images = [
 		'/images/page2/img1-correct.jpg',
 		'/images/page2/img2-wrong.jpg',

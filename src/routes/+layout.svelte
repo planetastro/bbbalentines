@@ -36,7 +36,7 @@
   .page-transition-container {
     position: relative;
     width: 100%;
-    min-height: 100dvh; /* Use dynamic viewport height for better mobile support */
+    min-height: 150dvh; /* Use dynamic viewport height for better mobile support */
     display: flex;
     flex-direction: column;
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ImageSelection from '$lib/components/ImageSelection.svelte';
 
-	const question = 'Which one reminds you of our first date?';
+	const question = 'Which wallpaper is my favourite?';
 	const images = [
 		'/images/page1/img1-wrong.jpg',
 		'/images/page1/img2-wrong.jpg',
