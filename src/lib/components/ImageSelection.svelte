@@ -24,7 +24,7 @@
 			}, 1000); // Navigate after a short delay
 		} else {
 			isCorrectlySelected = false; // Reset if incorrect
-			message = 'Oops, try again!';
+			message = 'Nope, try again!';
 		}
 	}
 </script>
@@ -51,11 +51,14 @@
 
 <style>
 	.image-selection-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-		font-family: sans-serif;
+		display: flex; /* Enables flexbox layout for the selection area */
+		flex-direction: column; /* Stacks selection elements vertically */
+		align-items: center; /* Centers elements horizontally */
+		justify-content: center; /* Centers elements vertically within the matched layout height */
+		min-height: 100%; /* Ensures the container height matches the parent's full height */
+		padding: 20px; /* Provides breathing room around the edges */
+		font-family: sans-serif; /* Sets a clean default font */
+		box-sizing: border-box; /* Includes padding in the total height calculation to avoid overflow */
 	}
 
 	h1 {
@@ -135,6 +138,10 @@
 		animation: fadeIn 0.8s ease-out forwards; /* Fade in animation */
 		border-radius: 10px;
 		padding: 10px;
+		position: fixed;
+		bottom: 20px;
+		border-color: #ff69b4;
+		border-style: solid;
 	}
 
 	/* Keyframe animation for fade in */
