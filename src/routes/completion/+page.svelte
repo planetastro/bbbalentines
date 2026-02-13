@@ -1,60 +1,69 @@
 <div class="completion-container">
-  <img src="/images/our-picture.jpg" alt="A picture of us" class="our-picture" />
-  <h1>My Dearest [Girlfriend's Name],</h1>
-  <p>You've found your way through all the questions, just like you always find your way into my heart.</p>
-  <p>Every moment with you is an adventure, and solving these little puzzles is just a small reflection of the joy you bring into my life.</p>
-  <p>Thank you for being you, for your laughter, your kindness, and for making every day brighter.</p>
-  <p>Happy Valentine's Day, my love!</p>
-  <p>- Your [Your Name]</p>
+	<img src="/images/our-picture.jpg" alt="A picture of us" class="our-picture" />
+	<h1>Betty "bbbb" Yuliani,</h1>
+	<p>Happy Valentine's Day, my beloved!</p>
+	<p>I wish you could understand how much you mean to me.</p>
+	<p>Thank you for putting up with me, no matter how difficult I am.</p>
+	<p>Thank you for the picture frame, the cologne, the debugging...</p>
+	<p>Thank you for being there whenever I ask.</p>
+	<p>Thank you for being my soulmate.</p>
+	<p>- Your Snowen</p>
 </div>
 
 <style>
-  .completion-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Georgia', serif; /* A more romantic font */
-    color: #333;
-    background-color: #fffafa; /* Snow white */
-  }
+	.completion-container {
+		display: flex; /* Enables flexbox layout for the message area */
+		flex-direction: column; /* Stacks completion elements vertically */
+		align-items: center; /* Centers elements horizontally */
+		justify-content: center; /* Centers elements vertically within the screen */
+		min-height: 100%; /* Ensures the container height matches the parent's full height */
+		text-align: center; /* Centers text content */
+		padding: 20px; /* Provides breathing room around the edges */
+		font-family: 'Handmade Alphabet', cursive; /* Cute Valentine's Day font */
+		color: #333; /* Soft dark color for readability */
+		background-color: #fffafa; /* Snow white background for the text box */
+	}
 
-  .our-picture {
-    max-width: 80%;
-    max-height: 400px; /* Limit height for larger images */
-    border-radius: 15px; /* Slightly rounded corners for the picture */
-    margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-  }
+	.our-picture {
+		max-width: 80%; /* Limits the width of the image */
+		max-height: 400px; /* Limit height for larger images */
+		border-radius: 15px; /* Slightly rounded corners for the picture */
+		margin-bottom: 30px; /* Adds space below the image */
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Initial soft shadow */
+		object-fit: cover; /* Ensures the image covers the area without distortion */
+		transition: all 0.3s ease-in-out; /* Smooth transition for the hover effect */
+	}
 
-  h1 {
-    color: #e91e63; /* Deeper pink */
-    margin-bottom: 25px;
-    font-size: 2.8em;
-    font-family: 'Great Vibes', cursive; /* A script font for header */
-  }
+	.our-picture:hover {
+		transform: translateY(-10px) scale(1.05); /* Lifts and scales the image up for a "pop-out" effect */
+		box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhances the depth shadow */
+		filter: drop-shadow(0 0 15px rgba(233, 30, 99, 0.6)); /* Adds a romantic pink background glow */
+	}
 
-  p {
-    font-size: 1.3em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    max-width: 700px;
-  }
+	h1 {
+		color: #e91e63; /* Deeper pink color for the title */
+		margin-bottom: 25px; /* Adds space below the header */
+		font-size: 2.8em; /* Sets a large font size for the header */
+		font-family: 'Handmade Alphabet', cursive; /* Cute Valentine's Day font for the name */
+	}
 
-  /* Basic responsive adjustments */
-  @media (max-width: 768px) {
-    .our-picture {
-      max-height: 300px;
-    }
-    h1 {
-      font-size: 2em;
-    }
-    p {
-      font-size: 1em;
-    }
-  }
+	p {
+		font-size: 1.3em;
+		line-height: 1.6;
+		margin-bottom: 15px;
+		max-width: 700px;
+	}
+
+	/* Basic responsive adjustments */
+	@media (max-width: 768px) {
+		.our-picture {
+			max-height: 300px;
+		}
+		h1 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 1em;
+		}
+	}
 </style>
