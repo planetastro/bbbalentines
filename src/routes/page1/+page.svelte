@@ -3,12 +3,12 @@
 
 	const question = 'Which one reminds you of our first date?';
 	const images = [
-		'/images/page1/img1-wrong.svg',
-		'/images/page1/img2-wrong.svg',
-		'/images/page1/img3-correct.svg',
-		'/images/page1/img4-wrong.svg',
-		'/images/page1/img5-wrong.svg',
-		'/images/page1/img6-wrong.svg'
+		'/images/page1/img1-wrong.jpg',
+		'/images/page1/img2-wrong.jpg',
+		'/images/page1/img3-correct.jpg',
+		'/images/page1/img4-wrong.jpg',
+		'/images/page1/img5-wrong.jpg',
+		'/images/page1/img6-wrong.jpg'
 	];
 	const correctImageIndex = 2; // This is arbitrary, you'll change it
 	const nextPagePath = '/page2';
