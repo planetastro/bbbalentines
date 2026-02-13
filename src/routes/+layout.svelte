@@ -4,6 +4,7 @@
 	import { scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
   import { page } from '$app/stores'; // Import page store
+  import { base } from '$app/paths'; // Import base path
 
 	let { children } = $props();
 </script>
@@ -13,7 +14,7 @@
   <title>Will you be my...</title>
 </svelte:head>
 
-<div class="page-transition-container">
+<div class="page-transition-container" style="background-image: url('{base}/images/usagi-bg.jpg');">
   {#key $page.url.pathname}
     <div
       class="transition-wrapper"
@@ -42,7 +43,6 @@
     min-height: 100dvh; /* Ensures background covers at least the full viewport height */
 
     /* Global styles for the Usagi repeating background */
-    background-image: url('/images/usagi-bg.jpg');
     background-repeat: repeat;
     background-size: 10% auto; /* Adjust this to make the repeating image smaller or larger */
     background-attachment: fixed; /* Keeps background fixed when scrolling */

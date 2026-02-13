@@ -17,3 +17,17 @@ const config = {
 };
 
 export default config;
+
+/**
+ * NOTE ON ASSETS & NAVIGATION:
+ * When adding new images or using `goto()`, you MUST prefix the path with `base` from `$app/paths`.
+ * 
+ * Example for images: 
+ *   import { base } from '$app/paths';
+ *   <img src="{base}/images/my-image.jpg" />
+ * 
+ * Example for navigation: 
+ *   goto(`${base}/my-page`);
+ * 
+ * This ensures the app works correctly both locally and when deployed to a GitHub Pages subpath.
+ */

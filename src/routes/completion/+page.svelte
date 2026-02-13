@@ -1,5 +1,9 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <div class="completion-container">
-	<img src="/images/our-picture.jpg" alt="A picture of us" class="our-picture" />
+	<img src="{base}/images/our-picture.jpg" alt="A picture of us" class="our-picture" />
 	<h1>Betty "bbbb" Yuliani,</h1>
 	<p>Happy Valentine's Day, my beloved!</p>
 	<p>I wish you could understand how much you mean to me.</p>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import { goto } from '$app/navigation'; // Import goto
+	import { base } from '$app/paths'; // Import base path
 
 	export let question: string;
 	export let images: string[]; // Array of image paths
@@ -20,7 +21,7 @@
 			message = 'Correct! Navigating to the next page...';
 			setTimeout(async () => {
 				// Make callback async to await goto
-				await goto(nextPagePath); // Use goto for client-side navigation
+				await goto(`${base}${nextPagePath}`); // Use goto with base path for client-side navigation
 			}, 1000); // Navigate after a short delay
 		} else {
 			isCorrectlySelected = false; // Reset if incorrect
@@ -40,7 +41,7 @@
 				on:click={() => selectImage(i)}
 				disabled={selectedIndex !== null && isCorrectlySelected}
 			>
-				<img src={image} alt={`Choice ${i + 1}`} />
+				<img src="{base}{image}" alt={`Choice ${i + 1}`} />
 			</button>
 		{/each}
 	</div>
